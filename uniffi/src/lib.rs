@@ -3,7 +3,6 @@ pub use parside::error::{ParsideError, ParsideResult};
 pub mod message;
 
 pub use self::message::*;
-pub use parside::*;
 
 // We must implement the UniffiCustomTypeWrapper trait.
 impl UniffiCustomTypeConverter for JsonValue {

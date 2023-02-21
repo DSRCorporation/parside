@@ -16,7 +16,6 @@ path = '..'
 package = "parside"
 
 [dependencies]
-cesride = { git = "https://github.com/DSRCorporation/cesride.git", branch = "changes-required-by-parser" }
 uniffi = { version="0.23", features = [ "cli" ] }
 uniffi_bindgen = "0.23.0"
 uniffi_macros = "0.23"
