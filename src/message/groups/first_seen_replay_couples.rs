@@ -1,7 +1,7 @@
 use crate::error::ParsideResult;
 use crate::message::cold_code::ColdCode;
 use crate::message::parsers::Parsers;
-use cesride::{Counter, Dater, Matter, Prefixer};
+use cesride::{Counter, Dater, Matter, Seqner};
 use cesride::counter::Codex as CounterCodex;
 use nom::multi::count;
 use nom::sequence::tuple;
@@ -48,12 +48,12 @@ impl FirstSeenReplayCouples {
 
 #[derive(Debug, Clone, Default)]
 pub struct FirstSeenReplayCouple {
-    pub firner: Prefixer,
+    pub firner: Seqner,
     pub dater: Dater,
 }
 
 impl FirstSeenReplayCouple {
-    pub fn new(firner: Prefixer, dater: Dater) -> Self {
+    pub fn new(firner: Seqner, dater: Dater) -> Self {
         Self { firner, dater }
     }
 }
